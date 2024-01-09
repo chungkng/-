@@ -1,0 +1,74 @@
+{	
+	"position": "top",
+	"layer": "top",
+		"modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "battery", "tray"],
+    // Modules configuration
+	"hyprland/workspaces": {
+		"disable-scroll": true,
+		"all-outputs": true,
+		"on-click": "activate",
+		"format": "{icon}",
+         	"format-icons": {
+             		"1": "一",
+             		"2": "二",
+             		"3": "三",
+             		"4": "四",
+			"5": "五",
+			"6": "六",
+			"7": "七",
+			"8": "八",
+			"9": "九",
+			"10": "十"
+         }
+     },
+	"custom/date": {
+    		"format": "{}",
+		"interval": 3600,
+		"exec": "/home/chungking/.scripts/waybar-date.sh",
+		"on-click": "gnome-calendar"
+	},
+
+
+	"tray": {
+		"icon-size": 14,
+        	"spacing": 10},
+
+	"clock": {
+		"format": "{:%H:%M}",
+        	"format-alt": "{:%d/%m/%Y}",
+		"on-right-click": "gnome-calendar"
+	},
+	"battery": {
+        	"interval": 60,
+		"states": {
+            		"warning": 20,
+            		"critical": 5,
+        	},
+        	"format": "{icon} {capacity}%",
+        	"format-charging": "󰂄 {capacity}%",
+        	"format-alt": "{time} {icon}",
+        	"format-icons": ["󰁻", "󰁾", "󰂂", "󰁹"],
+		"format-warning": "󰂃 {capacity}%",
+		"format-critical": "󰂃"
+	},
+	"network": {
+        	"interval": 60,
+		"format-wifi": "直 {signalStrength}%",
+        	"format-ethernet": "",
+        	"format-disconnected": "睊",
+		"tooltip": "true",
+		"tooltip-format": "{essid}"
+
+	},
+	"pulseaudio": {
+		"format": "{icon} {volume}%",
+        	"format-muted": "󰝟",
+		"on-click": "pavucontrol",
+		"format-icons": ["", "", ""]
+        },
+    }
+}
+
+

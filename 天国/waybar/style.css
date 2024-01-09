@@ -1,0 +1,94 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: Ubuntu Nerd Font, Kosugi Maru, Symbols Nerd Font;
+    font-size: 16px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: #ebebeb;
+}
+
+.modules-left {
+	background: transparent;
+	border-radius: 0px;
+}
+
+.modules-left {
+	margin-left: 5px;
+}
+
+.modules-right {
+	margin-right: 5px;
+	background: transparent;
+}
+
+
+
+#workspaces button {
+    padding: 0px 3px;
+    color: #1b4130;
+    margin: 0 0px;
+    margin-right: 5px;
+    margin-left: 2px;
+
+}  
+
+
+
+#workspaces button label {
+	font-size: 16px;
+	font-family: Kosugi Maru;
+}
+
+
+
+
+#workspaces button.active {
+    color: #e2eb92;
+}
+
+
+
+#clock {
+        color: #1b4130;
+}
+
+#battery {
+	padding: 5px;
+	background: transparent;
+	color: #f8f8f2;
+}
+
+#battery.critical {
+	color: #ff5555;
+	background: transparent;
+}
+
+#battery.warning {
+	color: #f9f093;
+	background: transparent;
+}
+
+#battery.charging {
+	color: #50fa7b;
+	background: transparent;
+}
+
+#pulseaudio {
+	padding: 5px;
+	color: #f8f8f2;
+}
+
+#tray {
+	padding: 5px;
+	color: #f8f8f2;
+	font-size: 12px;
+}
+
+#network {
+	padding: 5px;
+	color: #bd93f9;
+}

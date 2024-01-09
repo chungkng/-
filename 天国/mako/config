@@ -1,0 +1,7 @@
+font=Ubuntu Nerd Font 10
+background-color=#242424
+text-color=#F8F8F2
+border-color=#214f3a
+default-timeout=3000
+width=300
+anchor=top-right
